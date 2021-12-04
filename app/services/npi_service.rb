@@ -1,17 +1,17 @@
 class NpiService
   class << self
-    def last_name_state(last_name, state_abbreviation)
-      response = connection.get("/api/?version=2.0&last_name=#{last_name}&state=#{state_abbreviation}")
+    def last_name_state(last_name, state_abbreviation, limit)
+      response = connection.get("/api/?version=2.0&last_name=#{last_name}&state=#{state_abbreviation}&limit=#{limit}")
       JSON.parse(response.body, symbolize_names: true)
     end
 
-    def first_last_names(first_name, last_name)
-      response = connection.get("/api/?version=2.0&first_name=#{first_name}&last_name=#{last_name}")
+    def first_last_names(first_name, last_name, limit)
+      response = connection.get("/api/?version=2.0&first_name=#{first_name}&last_name=#{last_name}&limit=#{limit}")
       JSON.parse(response.body, symbolize_names: true)
     end
 
-    def taxonomy_state(taxonomy_description, state_abbreviation)
-      response = connection.get("/api/?version=2.0&taxonomy_description=#{taxonomy_description}&state=#{state_abbreviation}")
+    def taxonomy_state(taxonomy_description, state_abbreviation, limit)
+      response = connection.get("/api/?version=2.0&taxonomy_description=#{taxonomy_description}&state=#{state_abbreviation}&limit=#{limit}")
       JSON.parse(response.body, symbolize_names: true)
     end
 
