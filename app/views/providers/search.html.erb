@@ -1,6 +1,4 @@
-<html lang="en">
 <head>
-  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -9,24 +7,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="container">
   <h2>Search for a provider</h2>
   <p>Instructions for user here!</p>
-  <form action="/action_page.php">
-    <div class="row">
-      <div class="col">
-        <label for="last name">Provider's last name:</label>
-        <input type="text" class="form-control" id="last name" placeholder="Enter last name here" name="last_name">
-      </div>
-      <div class="col">
-        <label for="last name">State provider if located in:</label>
-        <input type="text" class="form-control" id="state abbreviation" placeholder="Enter state abbreviation, eg: 'CO' or 'FL'" name="state">
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary mt-3">Search</button>
-  </form>
-</div>
-
+  <%= bootstrap_form_with url: provider_results_path, method: :get, local: true do |form| %>
+      <%= form.text_area :last_name, label: "Provider last name:", hide_label: false, placeholder: "Enter provider last name here" %>
+    <%= form.text_area :state_abbreviation, label: "Provider location by State:", hide_label: false, placeholder: "Enter state state_abbreviation here, eg. 'CO'" %>
+    <%= form.submit 'Find me a provider!' %>
+    <% end %>
+  </div>
 </body>
-</html>
