@@ -25,6 +25,10 @@ gem 'figaro'
 gem 'faraday'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+#styling
+gem 'bootstrap', '~> 5.0.0'
+gem "bootstrap_form", "~> 5.0"
+gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
