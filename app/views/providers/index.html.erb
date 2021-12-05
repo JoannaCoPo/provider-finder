@@ -1,0 +1,8 @@
+<% if params[:last_name] && params[:state_abbreviation] %>
+  <% @providers.each do |provider| %>
+    <p><%= provider.full_name %></p>
+    <p><%= provider.npi_number %></p>
+    <p><%= provider.addresses %></p>
+    <p><%= provider.phone %></p>
+  <% end %>
+<% end %>
