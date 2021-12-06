@@ -1,10 +1,11 @@
 <div class="container pt-5">
   <h2>Provider Search Results:</h2>
   <br>
-  <% if params[:last_name] && params[:state_abbreviation] %>
+  <% if params[:last_name] && params[:state] %>
     <% @providers.each do |provider| %>
       <dt><p><%= provider.full_name %></p></dt>
       <p>NPI Number: <%= provider.npi_number %></p>
+      <p>Speciality: <%= provider.specialty %></p>
       <p><%= provider.addresses %></p>
       <p><%= provider.phone %></p>
       <hr class="dashed">
