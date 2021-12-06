@@ -4,7 +4,7 @@
   <% if params[:last_name] && params[:state_abbreviation] %>
     <% @providers.each do |provider| %>
       <dt><p><%= provider.full_name %></p></dt>
-      <p><%= provider.npi_number %></p>
+      <p>NPI Number: <%= provider.npi_number %></p>
       <p><%= provider.addresses %></p>
       <p><%= provider.phone %></p>
       <hr class="dashed">
