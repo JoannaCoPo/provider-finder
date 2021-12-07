@@ -27,7 +27,7 @@ RSpec.describe NpiService do
       expect(response[:results][2][:addresses][0][:state]).to eq('FL')
     end
 
-    it 'retreives provider info per exact speciality and state abbreviation', :vcr do
+    it 'retreives provider info per exact specialty and state abbreviation', :vcr do
       response = NpiService.get_provider_data('', '', 'pediatric cardiology', 'co', 200)
 
       expect(response).to be_a(Hash)

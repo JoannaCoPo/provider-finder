@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   def message
     'At least one the the following fields
     below must be completed in addition to
-    State: First Name, Last Name, or Speciality.'
+    State: First Name, Last Name, or specialty.'
   end
 end
