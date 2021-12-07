@@ -13,12 +13,12 @@ RSpec.describe 'provider facade' do
   end
 
   it 'creates Provider objects for first name and last name search', :vcr do
-    data = ProviderFacade.provider_data('jennifer', 'smith', '', '', 20)
+    data = ProviderFacade.provider_data('jennifer', 'russo', '', '', 20)
 
     expect(data).to be_an(Array)
     expect(data.all? { |el| el.class == Provider }).to be(true)
-    expect(data.first.full_name).to eq("JENNIFER SMITH")
-    expect(data.last.full_name).to eq("JENNIFER SMITH")
+    expect(data.first.full_name).to eq("JENNIFER RUSSO")
+    expect(data.last.full_name).to eq("JENNIFER RUSSO")
   end
 
   it 'creates Provider objects for specialty and state search', :vcr do

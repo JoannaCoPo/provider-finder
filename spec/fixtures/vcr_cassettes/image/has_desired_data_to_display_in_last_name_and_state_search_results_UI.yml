@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://npiregistry.cms.hhs.gov/api/?first_name=&last_name=russo&limit=3&state=co&taxonomy_description=&version=2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Dec 2021 22:57:25 GMT
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - TS017b4e40=01cffab1d3b2a1a1eb424fd6e483d56dceeec8a52ece12cb463a5b934fd98dc7d3e5d3c00dbcf4461bb3b13793a5eeea67837d6804;
+        Path=/; Domain=.npiregistry.cms.hhs.gov
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"result_count":3, "results":[{"enumeration_type": "NPI-1", "number":
+        1750737573, "last_updated_epoch": 1501200000, "created_epoch": 1462924800,
+        "basic": {"first_name": "KRISTIN", "last_name": "RUSSO", "middle_name": "IRENE",
+        "credential": "LMSW", "sole_proprietor": "NO", "gender": "F", "enumeration_date":
+        "2016-05-11", "last_updated": "2017-07-28", "status": "A", "name": "RUSSO
+        KRISTIN"}, "other_names": [], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "1333 IRIS AVE", "address_2": "", "city": "BOULDER", "state": "CO", "postal_code":
+        "803042226", "telephone_number": "303-443-8500"}, {"country_code": "US", "country_name":
+        "United States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "1333 IRIS AVE", "address_2": "", "city": "BOULDER", "state": "CO", "postal_code":
+        "803042226", "telephone_number": "303-443-8500"}], "taxonomies": [{"code":
+        "101YA0400X", "desc": "Counselor Addiction (Substance Use Disorder)", "primary":
+        false, "state": "", "license": ""}, {"code": "101YA0400X", "desc": "Counselor
+        Addiction (Substance Use Disorder)", "primary": true, "state": "NY", "license":
+        "100546"}, {"code": "390200000X", "desc": "Student in an Organized Health
+        Care Education/Training Program", "primary": false, "state": "", "license":
+        ""}], "identifiers": []},{"enumeration_type": "NPI-1", "number": 1447795810,
+        "last_updated_epoch": 1482322896, "created_epoch": 1482278400, "basic": {"name_prefix":
+        "DR.", "first_name": "ANGELA", "last_name": "RUSSO", "credential": "AU.D.",
+        "sole_proprietor": "YES", "gender": "F", "enumeration_date": "2016-12-21",
+        "last_updated": "2016-12-21", "status": "A", "name": "RUSSO ANGELA"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "6301 WETZEL
+        AVE", "address_2": "BLDG 1525", "city": "FORT CARSON", "state": "CO", "postal_code":
+        "809134188", "telephone_number": "719-526-4095"}, {"country_code": "US", "country_name":
+        "United States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "6301 WETZEL AVE", "address_2": "", "city": "FORT CARSON", "state": "CO",
+        "postal_code": "809134188", "telephone_number": "719-526-4095"}], "taxonomies":
+        [{"code": "231H00000X", "desc": "Audiologist", "primary": true, "state": "PA",
+        "license": "AT006492"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1255477196, "last_updated_epoch": 1515715200, "created_epoch": 1170028800,
+        "basic": {"name_prefix": "MRS.", "first_name": "SUSAN", "last_name": "RUSSO",
+        "middle_name": "T", "credential": "APN", "sole_proprietor": "NO", "gender":
+        "F", "enumeration_date": "2007-01-29", "last_updated": "2018-01-12", "status":
+        "A", "name": "RUSSO SUSAN"}, "other_names": [{"code": "1", "type": "Former
+        Name", "last_name": "LEVY", "first_name": "SUSAN", "middle_name": "T", "prefix":
+        "MRS.", "credential": "APN"}], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "1970 E 3RD AVE", "address_2": "UNIT 1", "city": "DURANGO", "state": "CO",
+        "postal_code": "813015056", "telephone_number": "970-335-2288", "fax_number":
+        "970-335-2280"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "185 SUTTLE ST", "address_2":
+        "", "city": "DURANGO", "state": "CO", "postal_code": "813038276", "telephone_number":
+        "970-335-2232", "fax_number": "970-335-2440"}], "taxonomies": [{"code": "363L00000X",
+        "desc": "Nurse Practitioner", "primary": false, "state": "CO", "license":
+        "APN.0100009-CNS"}, {"code": "363LC1500X", "desc": "Nurse Practitioner Community
+        Health", "primary": false, "state": "CO", "license": "APN.0100009-CNS"}, {"code":
+        "363LP0808X", "desc": "Nurse Practitioner Psych/Mental Health", "primary":
+        true, "state": "CO", "license": "APN.0100009-CNS"}, {"code": "363LP0808X",
+        "desc": "Nurse Practitioner Psych/Mental Health", "primary": false, "state":
+        "IL", "license": "309003290"}], "identifiers": []}]}'
+  recorded_at: Tue, 07 Dec 2021 22:57:25 GMT
+recorded_with: VCR 6.0.0
