@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe NpiService do
   describe 'happy path' do
-    it 'retreives provider info per last name and state abbreviation', :vcr do
+    it 'retreives provider data per last name and state abbreviation', :vcr do
       response = NpiService.get_provider_data('', 'cortes', '', 'co', 200)
 
       expect(response).to be_a(Hash)
@@ -11,7 +11,7 @@ RSpec.describe NpiService do
       expect(response[:results][0][:addresses][0][:state]).to eq('CO')
     end
 
-    it 'retreives provider info per first and last names', :vcr do
+    it 'retreives provider data per first and last names', :vcr do
       response = NpiService.get_provider_data('joe', 'berg', '', '', 200)
 
       expect(response).to be_a(Hash)
@@ -27,7 +27,7 @@ RSpec.describe NpiService do
       expect(response[:results][2][:addresses][0][:state]).to eq('FL')
     end
 
-    it 'retreives provider info per exact specialty and state abbreviation', :vcr do
+    it 'retreives provider data per exact specialty and state abbreviation', :vcr do
       response = NpiService.get_provider_data('', '', 'pediatric cardiology', 'co', 200)
 
       expect(response).to be_a(Hash)

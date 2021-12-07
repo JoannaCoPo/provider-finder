@@ -1,7 +1,7 @@
 class ProviderFacade
   class << self
-    def get_provider_data(first_name, last_name, specialty, state, limit = 200)
-      response = NpiService.all_queries(first_name, last_name, specialty, state, limit)
+    def provider_data(first_name, last_name, specialty, state, limit = 200)
+      response = NpiService.get_provider_data(first_name, last_name, specialty, state, limit)
       create_provider_objects(response)
     end
 
