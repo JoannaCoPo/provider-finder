@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Search for a provider</h2>
+  <p>Instructions for user here!</p>
+  <%= bootstrap_form_with url: provider_results_path, method: :get, local: true do |form| %>
+    <%= form.text_area :first_name, label: "First name:", hide_label: false, placeholder: "Enter provider first name here" %>
+    <%= form.text_area :last_name, label: "Last name:", hide_label: false, placeholder: "Enter provider last name here" %>
+    <%= form.text_area :taxonomy_desc, label: "Specialty or area of practice:", hide_label: false, placeholder: "Enter specialty here, eg. 'dental'" %>
+    <%= form.text_area :state, label: "Provider location by State:", hide_label: false, placeholder: "Enter state abbreviation here, eg. 'CO'" %>
+    <%= form.submit 'Find me a provider!' %>
+    <% end %>
+  </div>
+</body>
