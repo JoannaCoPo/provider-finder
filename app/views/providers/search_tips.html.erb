@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+  <style>
+    ul.a {
+      list-style-type: circle;
+    }
+  </style>
+
+  <div class="pt-3">
+    <div class="container p-1 my-1 border border-warning border-2">
+      <h2 class="text-center">Provider Search Tips</h2>
+    </div>
+  </div>
+
+  <div class="pt-3">
+    <h4>What is a provider anyway?</h4>
+  </div>
+
+  <ul class="a">
+    <li>In healthcare, a provider is a person or company that provides a healthcare service to you. </li>
+    <li>Examples of individual providers are doctors and dentists to physical therapists and mental health professionals. There are many types!</li>
+    <li>Again, this could refer to one professional but also to an entire group or company of professionals (such as at a healthcare center).</li>
+  </ul>
+
+  <div class="pt-3">
+    <h5>For best results, it is recommended to use the following combinations for your provider search:</h5>
+  </div>
+
+  <ul class="a">
+    <li>Last Name + State </li>
+    <li>First Name + Last Name</li>
+    <li>Speciality + State</li>
+  </ul>
+
+
+  <div class="pt-3">
+    <h5 class="text-danger">Important Notes</h5>
+  </div>
+
+  <ul class="a">
+    <li>For state, you must use the state abbreviations. Examples: CO for Colorado or TX for Texas</li>
+    <li>For specialty, please try to put the exact name of the speciality service your are looking for. This will help return more accurate results. Examples: 'Family Medicine' or 'Dietitian'</li>
+    <li>If aren't sure of the exact name of the speciality, try different things! For exmaple, you will get different results from 'dentist' and 'dental'</li>
+  </ul>
+
+  <div class="m-1 pt-3 pb-5">
+    <div class="btn btn-warning">
+      <%= link_to 'Back to provider search page', provider_search_path, :class => "btn" %>
+    </div>
+  </div>
+</div>

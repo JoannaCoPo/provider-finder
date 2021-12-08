@@ -5,8 +5,8 @@ RSpec.describe 'provider search results index page' do
      before :each do
        visit provider_search_path
 
-       fill_in 'First name', with: ''
-       fill_in 'Last name', with: 'stangebye'
+       fill_in 'First Name', with: ''
+       fill_in 'Last Name', with: 'stangebye'
        fill_in 'Specialty or area of practice:', with: ''
        fill_in 'Provider location by State', with: 'co'
      end
@@ -43,8 +43,8 @@ RSpec.describe 'provider search results index page' do
 
       visit provider_search_path
 
-      fill_in 'First name', with: ''
-      fill_in 'Last name', with: ''
+      fill_in 'First Name', with: ''
+      fill_in 'Last Name', with: ''
       fill_in 'Specialty or area of practice:', with: ''
       fill_in 'Provider location by State', with: 'co'
       click_on('Find me a provider!')
@@ -56,8 +56,8 @@ RSpec.describe 'provider search results index page' do
     it 'alerts user if no results were found via their input', :vcr do
       visit provider_search_path
 
-      fill_in 'First name', with: 'don'
-      fill_in 'Last name', with: 'juan'
+      fill_in 'First Name', with: 'don'
+      fill_in 'Last Name', with: 'juan'
       fill_in 'Specialty or area of practice:', with: ''
       fill_in 'Provider location by State', with: ''
       click_on('Find me a provider!')
