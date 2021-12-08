@@ -40,7 +40,7 @@
     ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin20]
     ```
 
-* [System Dependencies](https://github.com/JoannaCoPo/provider-finder/blob/main/Gemfile)
+* See system depenencies [here](https://github.com/JoannaCoPo/provider-finder/blob/main/Gemfile)
     ```bash
     $ rails -v
     Rails 6.1.4
