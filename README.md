@@ -1,6 +1,7 @@
 # Provider Finder
 ### A provider lookup tool for providers who accept Medicare and Medicaid.
 ##### Created using Medicare & Medicaid's NPI (National Provider Identifier) [API](https://npiregistry.cms.hhs.gov/registry/help-api).
+* Visit [this link](http://kick-match-fe.herokuapp.com/) for the deployed app in production
 
 #### Framework
 <p>
