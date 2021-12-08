@@ -11,10 +11,10 @@
   <h2>Search for a provider</h2>
   <p>Instructions for user here!</p>
   <%= bootstrap_form_with url: provider_results_path, method: :get, local: true do |form| %>
-    <%= form.text_area :first_name, label: "First name:", hide_label: false, placeholder: "Enter provider first name here" %>
-    <%= form.text_area :last_name, label: "Last name:", hide_label: false, placeholder: "Enter provider last name here" %>
+    <%= form.text_area :first_name, label: "First Name:", hide_label: false, placeholder: "Enter provider first name here" %>
+    <%= form.text_area :last_name, label: "Last Name:", hide_label: false, placeholder: "Enter provider last name here" %>
     <%= form.text_area :specialty, label: "Specialty or area of practice:", hide_label: false, placeholder: "Enter specialty here, eg. 'dental'" %>
-    <%= form.text_area :state, label: "Provider location by State:", hide_label: false, placeholder: "Enter state abbreviation here, eg. 'CO'" %>
+    <%= form.text_area :state, label: "Provider location by State:", hide_label: false, placeholder: "Enter state abbreviation here, eg. 'CO'. Please also include at least one of the other search options above: First Name, Last Name, or Specialty" %>
     <%= form.submit 'Find me a provider!' %>
     <% end %>
   </div>
