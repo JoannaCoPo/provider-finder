@@ -156,6 +156,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
+    pg (1.2.3)
     popper_js (2.9.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -320,6 +321,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   listen (~> 3.3)
+  pg (>= 0.18, < 2.0)
   pry
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
