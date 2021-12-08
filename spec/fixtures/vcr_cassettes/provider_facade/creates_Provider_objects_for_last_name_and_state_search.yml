@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://npiregistry.cms.hhs.gov/api/?first_name=&last_name=russo&limit=20&state=co&taxonomy_description=&version=2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Dec 2021 22:59:52 GMT
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - TS017b4e40=01cffab1d3207c56bb54f7b64adc66c99fbc92ef4441b66574174f1cf39bf0bd524c63199e2a59b02ff83d1cb61663462c6adb129d;
+        Path=/; Domain=.npiregistry.cms.hhs.gov
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"result_count":9, "results":[{"enumeration_type": "NPI-1", "number":
+        1750737573, "last_updated_epoch": 1501200000, "created_epoch": 1462924800,
+        "basic": {"first_name": "KRISTIN", "last_name": "RUSSO", "middle_name": "IRENE",
+        "credential": "LMSW", "sole_proprietor": "NO", "gender": "F", "enumeration_date":
+        "2016-05-11", "last_updated": "2017-07-28", "status": "A", "name": "RUSSO
+        KRISTIN"}, "other_names": [], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "1333 IRIS AVE", "address_2": "", "city": "BOULDER", "state": "CO", "postal_code":
+        "803042226", "telephone_number": "303-443-8500"}, {"country_code": "US", "country_name":
+        "United States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "1333 IRIS AVE", "address_2": "", "city": "BOULDER", "state": "CO", "postal_code":
+        "803042226", "telephone_number": "303-443-8500"}], "taxonomies": [{"code":
+        "101YA0400X", "desc": "Counselor Addiction (Substance Use Disorder)", "primary":
+        false, "state": "", "license": ""}, {"code": "101YA0400X", "desc": "Counselor
+        Addiction (Substance Use Disorder)", "primary": true, "state": "NY", "license":
+        "100546"}, {"code": "390200000X", "desc": "Student in an Organized Health
+        Care Education/Training Program", "primary": false, "state": "", "license":
+        ""}], "identifiers": []},{"enumeration_type": "NPI-1", "number": 1447795810,
+        "last_updated_epoch": 1482322896, "created_epoch": 1482278400, "basic": {"name_prefix":
+        "DR.", "first_name": "ANGELA", "last_name": "RUSSO", "credential": "AU.D.",
+        "sole_proprietor": "YES", "gender": "F", "enumeration_date": "2016-12-21",
+        "last_updated": "2016-12-21", "status": "A", "name": "RUSSO ANGELA"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "6301 WETZEL
+        AVE", "address_2": "BLDG 1525", "city": "FORT CARSON", "state": "CO", "postal_code":
+        "809134188", "telephone_number": "719-526-4095"}, {"country_code": "US", "country_name":
+        "United States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "6301 WETZEL AVE", "address_2": "", "city": "FORT CARSON", "state": "CO",
+        "postal_code": "809134188", "telephone_number": "719-526-4095"}], "taxonomies":
+        [{"code": "231H00000X", "desc": "Audiologist", "primary": true, "state": "PA",
+        "license": "AT006492"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1255477196, "last_updated_epoch": 1515715200, "created_epoch": 1170028800,
+        "basic": {"name_prefix": "MRS.", "first_name": "SUSAN", "last_name": "RUSSO",
+        "middle_name": "T", "credential": "APN", "sole_proprietor": "NO", "gender":
+        "F", "enumeration_date": "2007-01-29", "last_updated": "2018-01-12", "status":
+        "A", "name": "RUSSO SUSAN"}, "other_names": [{"code": "1", "type": "Former
+        Name", "last_name": "LEVY", "first_name": "SUSAN", "middle_name": "T", "prefix":
+        "MRS.", "credential": "APN"}], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "1970 E 3RD AVE", "address_2": "UNIT 1", "city": "DURANGO", "state": "CO",
+        "postal_code": "813015056", "telephone_number": "970-335-2288", "fax_number":
+        "970-335-2280"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "185 SUTTLE ST", "address_2":
+        "", "city": "DURANGO", "state": "CO", "postal_code": "813038276", "telephone_number":
+        "970-335-2232", "fax_number": "970-335-2440"}], "taxonomies": [{"code": "363L00000X",
+        "desc": "Nurse Practitioner", "primary": false, "state": "CO", "license":
+        "APN.0100009-CNS"}, {"code": "363LC1500X", "desc": "Nurse Practitioner Community
+        Health", "primary": false, "state": "CO", "license": "APN.0100009-CNS"}, {"code":
+        "363LP0808X", "desc": "Nurse Practitioner Psych/Mental Health", "primary":
+        true, "state": "CO", "license": "APN.0100009-CNS"}, {"code": "363LP0808X",
+        "desc": "Nurse Practitioner Psych/Mental Health", "primary": false, "state":
+        "IL", "license": "309003290"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1750589909, "last_updated_epoch": 1184025600, "created_epoch": 1184025600,
+        "basic": {"name_prefix": "MS.", "first_name": "MARIA", "last_name": "RUSSO",
+        "middle_name": "ANGELA", "credential": "LCSW", "sole_proprietor": "NO", "gender":
+        "F", "enumeration_date": "2007-07-10", "last_updated": "2007-07-10", "status":
+        "A", "name": "RUSSO MARIA"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "6340 W 38TH AVE", "address_2": "# 704", "city": "WHEAT
+        RIDGE", "state": "CO", "postal_code": "800335001", "telephone_number": "303-422-3231"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "10001 W 32ND AVE", "address_2":
+        "", "city": "WHEAT RIDGE", "state": "CO", "postal_code": "800335601", "telephone_number":
+        "303-238-1231"}], "taxonomies": [{"code": "1041C0700X", "desc": "Social Worker
+        Clinical", "primary": false, "state": "NY", "license": "072436"}, {"code":
+        "1041C0700X", "desc": "Social Worker Clinical", "primary": true, "state":
+        "CO", "license": "833"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1023421864, "last_updated_epoch": 1521244800, "created_epoch": 1402358400,
+        "basic": {"first_name": "MARY", "last_name": "RUSSO", "credential": "DO",
+        "sole_proprietor": "NO", "gender": "F", "enumeration_date": "2014-06-10",
+        "last_updated": "2018-03-17", "status": "A", "name": "RUSSO MARY"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "400 W
+        16TH ST", "address_2": "", "city": "PUEBLO", "state": "CO", "postal_code":
+        "810032745", "telephone_number": "#(719) 584-4306", "fax_number": "719-595-7886"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "400 W 16TH ST", "address_2":
+        "", "city": "PUEBLO", "state": "CO", "postal_code": "810032745", "telephone_number":
+        "#(719) 584-4306", "fax_number": "719-595-7886"}], "taxonomies": [{"code":
+        "207P00000X", "desc": "Emergency Medicine", "primary": true, "state": "CO",
+        "license": "DR.0058320"}, {"code": "207P00000X", "desc": "Emergency Medicine",
+        "primary": false, "state": "MI", "license": "5101021285"}, {"code": "390200000X",
+        "desc": "Student in an Organized Health Care Education/Training Program",
+        "primary": false, "state": "MI", "license": "5101021285"}], "identifiers":
+        [], "practiceLocations": [{"address_type": "DOM", "address_1": "1000 OAKLAND
+        DR", "address_2": "", "city": "KALAMAZOO", "state": "MI", "postal_code": "490081282",
+        "country_code": "US", "country_name": "United States", "telephone_number":
+        "269-337-4400", "update_date": "2017-06-30 14:04"}]},{"enumeration_type":
+        "NPI-1", "number": 1245724400, "last_updated_epoch": 1529500990, "created_epoch":
+        1529452800, "basic": {"first_name": "ALYSSA", "last_name": "RUSSO", "sole_proprietor":
+        "NO", "gender": "F", "enumeration_date": "2018-06-20", "last_updated": "2018-06-20",
+        "status": "A", "name": "RUSSO ALYSSA"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "1930 FREQUENT FLYER PT", "address_2": "", "city": "COLORADO
+        SPRINGS", "state": "CO", "postal_code": "809151500", "telephone_number": "800-345-0448"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1930 FREQUENT FLYER PT", "address_2":
+        "", "city": "COLORADO SPRINGS", "state": "CO", "postal_code": "809151500",
+        "telephone_number": "800-345-0448"}], "taxonomies": [{"code": "106S00000X",
+        "desc": "Behavior Technician", "primary": true, "state": "", "license": ""}],
+        "identifiers": []},{"enumeration_type": "NPI-1", "number": 1497350425, "last_updated_epoch":
+        1606755426, "created_epoch": 1606694400, "basic": {"first_name": "JORDYN",
+        "last_name": "RUSSO", "credential": "LCSW", "sole_proprietor": "NO", "gender":
+        "F", "enumeration_date": "2020-11-30", "last_updated": "2020-11-30", "status":
+        "A", "name": "RUSSO JORDYN", "certification_date": "2020-11-30"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "26 W DRY
+        CREEK CIR", "address_2": "", "city": "LITTLETON", "state": "CO", "postal_code":
+        "801208063", "telephone_number": "720-608-8543"}, {"country_code": "US", "country_name":
+        "United States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "4379 S COORS CT", "address_2": "", "city": "MORRISON", "state": "CO", "postal_code":
+        "804651052", "telephone_number": "404-735-3240"}], "taxonomies": [{"code":
+        "101YM0800X", "desc": "Counselor Mental Health", "primary": true, "state":
+        "CO", "license": "CSW09925701"}], "identifiers": []},{"enumeration_type":
+        "NPI-1", "number": 1326714858, "last_updated_epoch": 1629140532, "created_epoch":
+        1629072000, "basic": {"first_name": "KYLIE", "last_name": "RUSSO", "middle_name":
+        "AMBER", "credential": "OTR", "sole_proprietor": "YES", "gender": "F", "enumeration_date":
+        "2021-08-16", "last_updated": "2021-08-16", "status": "A", "name": "RUSSO
+        KYLIE", "certification_date": "2021-08-16"}, "other_names": [], "addresses":
+        [{"country_code": "US", "country_name": "United States", "address_purpose":
+        "LOCATION", "address_type": "DOM", "address_1": "320 S AMES ST APT 1", "address_2":
+        "", "city": "LAKEWOOD", "state": "CO", "postal_code": "802263658", "telephone_number":
+        "704-996-5055"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "320 S AMES ST APT 1", "address_2":
+        "", "city": "LAKEWOOD", "state": "CO", "postal_code": "802263658", "telephone_number":
+        "704-996-5055"}], "taxonomies": [{"code": "225X00000X", "desc": "Occupational
+        Therapist", "primary": true, "state": "CO", "license": "6628"}], "identifiers":
+        []},{"enumeration_type": "NPI-1", "number": 1538836796, "last_updated_epoch":
+        1629913385, "created_epoch": 1629849600, "basic": {"first_name": "SAMUEL",
+        "last_name": "RUSSO", "sole_proprietor": "NO", "gender": "M", "enumeration_date":
+        "2021-08-25", "last_updated": "2021-08-25", "status": "A", "name": "RUSSO
+        SAMUEL", "certification_date": "2021-08-25"}, "other_names": [], "addresses":
+        [{"country_code": "US", "country_name": "United States", "address_purpose":
+        "LOCATION", "address_type": "DOM", "address_1": "2853 NORTH AVE", "address_2":
+        "", "city": "GRAND JUNCTION", "state": "CO", "postal_code": "815015040", "telephone_number":
+        "970-256-9424"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "2853 NORTH AVE", "address_2":
+        "", "city": "GRAND JUNCTION", "state": "CO", "postal_code": "815015040"}],
+        "taxonomies": [{"code": "390200000X", "desc": "Student in an Organized Health
+        Care Education/Training Program", "primary": true, "state": "", "license":
+        ""}], "identifiers": []}]}'
+  recorded_at: Tue, 07 Dec 2021 22:59:52 GMT
+recorded_with: VCR 6.0.0

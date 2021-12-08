@@ -1,11 +1,20 @@
 require 'will_paginate/array'
 
 class ProvidersController < ApplicationController
-  def search
-  end
+  def search;end
 
   def index
-    array = ProviderFacade.all_queries(params[:first_name], params[:last_name], params[:taxonomy_desc], params[:state])
-    @providers = array.paginate(page: params[:page], per_page: 20)
+    begin
+      array = call_provider_facade
+    rescue => e
+      flash[:alert] = flash_message
+      redirect_to provider_search_path
+    end
+    return @providers = array.paginate(page: params[:page], per_page: 20) if !array.nil?
+  end
+
+  private
+  def call_provider_facade
+    ProviderFacade.provider_data(params[:first_name], params[:last_name], params[:specialty], params[:state])
   end
 end

@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://npiregistry.cms.hhs.gov/api/?first_name=joe&last_name=berg&limit=200&state=&taxonomy_description=&version=2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Dec 2021 22:59:53 GMT
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - TS017b4e40=01cffab1d3865e459fd68c5c4e61188a680a5c015397ac94a770c1784b88e860587c8d66390156bd8b54633f9c3dde8dc9176cb769;
+        Path=/; Domain=.npiregistry.cms.hhs.gov
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"result_count":3, "results":[{"enumeration_type": "NPI-1", "number":
+        1962498204, "last_updated_epoch": 1325635200, "created_epoch": 1127347200,
+        "basic": {"name_prefix": "DR.", "first_name": "JOSEPH", "last_name": "BERG",
+        "middle_name": "CHANDLER", "credential": "MD", "sole_proprietor": "NO", "gender":
+        "M", "enumeration_date": "2005-09-22", "last_updated": "2012-01-04", "status":
+        "A", "name": "BERG JOSEPH"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "2709 MEREDYTH DR", "address_2": "SUITE 110", "city":
+        "ALBANY", "state": "GA", "postal_code": "317070222", "telephone_number": "229-432-7012",
+        "fax_number": "229-435-0211"}, {"country_code": "US", "country_name": "United
+        States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "2709 MEREDYTH DR", "address_2": "SUITE 110", "city": "ALBANY", "state": "GA",
+        "postal_code": "317070222", "telephone_number": "229-432-7012", "fax_number":
+        "229-435-0211"}], "taxonomies": [{"code": "207W00000X", "desc": "Ophthalmology",
+        "primary": true, "state": "GA", "license": "021643"}], "identifiers": [{"identifier":
+        "00070188B", "code": "05", "desc": "MEDICAID", "state": "GA", "issuer": ""}]},{"enumeration_type":
+        "NPI-1", "number": 1922360346, "last_updated_epoch": 1439468605, "created_epoch":
+        1339459200, "basic": {"name_prefix": "DR.", "first_name": "JOSEPH", "last_name":
+        "BERG", "middle_name": "RANDALL", "credential": "D.O.", "sole_proprietor":
+        "NO", "gender": "M", "enumeration_date": "2012-06-12", "last_updated": "2015-08-13",
+        "status": "A", "name": "BERG JOSEPH"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "1801 HICKMAN RD", "address_2": "", "city": "DES MOINES",
+        "state": "IA", "postal_code": "503141505", "telephone_number": "515-282-2200",
+        "fax_number": "515-282-2332"}, {"country_code": "US", "country_name": "United
+        States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "800 COMPASSION WAY", "address_2": "", "city": "DODGEVILLE", "state": "WI",
+        "postal_code": "535331956", "telephone_number": "608-930-8000"}], "taxonomies":
+        [{"code": "207Q00000X", "desc": "Family Medicine", "primary": true, "state":
+        "IA", "license": "04585"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1174061758, "last_updated_epoch": 1486124372, "created_epoch": 1486080000,
+        "basic": {"name_prefix": "DR.", "first_name": "JOSEPH", "last_name": "BERG",
+        "middle_name": "LEON", "credential": "PSYD, BCBA", "sole_proprietor": "YES",
+        "gender": "M", "enumeration_date": "2017-02-03", "last_updated": "2017-02-03",
+        "status": "A", "name": "BERG JOSEPH"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "909 N MIAMI BEACH BLVD", "address_2": "SUITE #301", "city":
+        "NORTH MIAMI BEACH", "state": "FL", "postal_code": "331623712", "telephone_number":
+        "305-778-5637"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "909 NORTH MIAMI BEACH BLVD",
+        "address_2": "SUITE #301", "city": "NORTH MIAMI BEACH", "state": "FL", "postal_code":
+        "33160", "telephone_number": "305-778-5637"}], "taxonomies": [{"code": "101YM0800X",
+        "desc": "Counselor Mental Health", "primary": true, "state": "", "license":
+        ""}, {"code": "1041C0700X", "desc": "Social Worker Clinical", "primary": false,
+        "state": "", "license": ""}, {"code": "103K00000X", "desc": "Behavioral Analyst",
+        "primary": false, "state": "", "license": ""}, {"code": "102L00000X", "desc":
+        "Psychoanalyst", "primary": false, "state": "", "license": ""}, {"code": "106E00000X",
+        "desc": "Assistant Behavior Analyst", "primary": false, "state": "", "license":
+        "", "taxonomy_group": "193200000X MULTI-SPECIALTY GROUP"}, {"code": "106S00000X",
+        "desc": "Behavior Technician", "primary": false, "state": "", "license": ""}],
+        "identifiers": []}]}'
+  recorded_at: Tue, 07 Dec 2021 22:59:53 GMT
+recorded_with: VCR 6.0.0

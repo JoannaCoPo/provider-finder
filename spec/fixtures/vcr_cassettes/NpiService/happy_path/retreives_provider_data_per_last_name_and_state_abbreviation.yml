@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://npiregistry.cms.hhs.gov/api/?first_name=&last_name=cortes&limit=200&state=co&taxonomy_description=&version=2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Dec 2021 22:59:53 GMT
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - TS017b4e40=01cffab1d3c85ddda3430d6988b4026f4d9ce0f563ef0d7c82ad4afdb9bac6f9457dfc6fc67511a129c334f33f757fe6c2cebcb52e;
+        Path=/; Domain=.npiregistry.cms.hhs.gov
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"result_count":2, "results":[{"enumeration_type": "NPI-1", "number":
+        1417309857, "last_updated_epoch": 1468200430, "created_epoch": 1468195200,
+        "basic": {"first_name": "CAMERON", "last_name": "CORTES", "sole_proprietor":
+        "YES", "gender": "F", "enumeration_date": "2016-07-11", "last_updated": "2016-07-11",
+        "status": "A", "name": "CORTES CAMERON"}, "other_names": [], "addresses":
+        [{"country_code": "US", "country_name": "United States", "address_purpose":
+        "LOCATION", "address_type": "DOM", "address_1": "655 SHERIDAN AVE", "address_2":
+        "", "city": "LOVELAND", "state": "CO", "postal_code": "805375465", "telephone_number":
+        "970-689-2836"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "655 SHERIDAN AVE", "address_2":
+        "", "city": "LOVELAND", "state": "CO", "postal_code": "805375465", "telephone_number":
+        "970-689-2836"}], "taxonomies": [{"code": "174400000X", "desc": "Specialist",
+        "primary": true, "state": "", "license": ""}], "identifiers": [{"identifier":
+        "82670269", "code": "05", "desc": "MEDICAID", "state": "CO", "issuer": ""}]},{"enumeration_type":
+        "NPI-1", "number": 1568042778, "last_updated_epoch": 1618237189, "created_epoch":
+        1618185600, "basic": {"first_name": "ANGELA", "last_name": "CORTES", "sole_proprietor":
+        "NO", "gender": "F", "enumeration_date": "2021-04-12", "last_updated": "2021-04-12",
+        "status": "A", "name": "CORTES ANGELA", "certification_date": "2021-04-12"},
+        "other_names": [], "addresses": [{"country_code": "US", "country_name": "United
+        States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "41 MONTEBELLO RD STE 100", "address_2": "", "city": "PUEBLO", "state": "CO",
+        "postal_code": "810011379", "telephone_number": "719-545-2746"}, {"country_code":
+        "US", "country_name": "United States", "address_purpose": "MAILING", "address_type":
+        "DOM", "address_1": "41 MONTEBELLO RD STE 204", "address_2": "", "city": "PUEBLO",
+        "state": "CO", "postal_code": "810011379"}], "taxonomies": [{"code": "101Y00000X",
+        "desc": "Counselor", "primary": true, "state": "", "license": ""}], "identifiers":
+        []}]}'
+  recorded_at: Tue, 07 Dec 2021 22:59:53 GMT
+recorded_with: VCR 6.0.0

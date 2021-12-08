@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://npiregistry.cms.hhs.gov/api/?first_name=&last_name=&limit=200&state=co&taxonomy_description=&version=2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Dec 2021 00:03:41 GMT
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - TS017b4e40=01cffab1d3b97c50ad06a35db204fa251aca18aa1399c4c37c59d7c21529caaedd039b5bed7560e9165c9d18b3bcf250e91b3f060b;
+        Path=/; Domain=.npiregistry.cms.hhs.gov
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"Errors": [{"field": "state", "number": "07", "description": "field
+        state requires additional search criteria"}]}'
+  recorded_at: Wed, 08 Dec 2021 00:03:41 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,333 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://npiregistry.cms.hhs.gov/api/?first_name=&last_name=&limit=20&state=co&taxonomy_description=dentist&version=2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 Dec 2021 22:59:53 GMT
+      Content-Type:
+      - application/json
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Set-Cookie:
+      - TS017b4e40=01cffab1d37c85541b7d9fe8c76e30ef2333a2fc8842d02f1af272f5a423364b6757f9df968b81c36f9860a2ecbd1df4e34ae1dfec;
+        Path=/; Domain=.npiregistry.cms.hhs.gov
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"result_count":20, "results":[{"enumeration_type": "NPI-2", "number":
+        1891798690, "last_updated_epoch": 1213747200, "created_epoch": 1116892800,
+        "basic": {"organization_name": "DR. THOMAS MATSUI, D.D.S., P.C.", "organizational_subpart":
+        "NO", "enumeration_date": "2005-05-24", "last_updated": "2008-06-18", "status":
+        "A", "authorized_official_credential": "D.D.S.", "authorized_official_first_name":
+        "THOMAS", "authorized_official_last_name": "MATSUI", "authorized_official_middle_name":
+        "KENNETH", "authorized_official_telephone_number": "303-234-0505", "authorized_official_title_or_position":
+        "C.E.O.", "authorized_official_name_prefix": "DR.", "name": "DR. THOMAS MATSUI,
+        D.D.S., P.C."}, "other_names": [], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "1526 COLE BLVD", "address_2": "STE 120", "city": "LAKEWOOD", "state": "CO",
+        "postal_code": "804013410", "telephone_number": "303-234-0505", "fax_number":
+        "303-234-0226"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1526 COLE BLVD", "address_2":
+        "STE 120", "city": "LAKEWOOD", "state": "CO", "postal_code": "804013410",
+        "telephone_number": "303-234-0505", "fax_number": "303-234-0226"}], "taxonomies":
+        [{"code": "1223G0001X", "desc": "Dentist General Practice", "primary": true,
+        "state": "CO", "license": "105042", "taxonomy_group": "193400000X SINGLE SPECIALTY  GROUP"}],
+        "identifiers": []},{"enumeration_type": "NPI-1", "number": 1962405712, "last_updated_epoch":
+        1183852800, "created_epoch": 1116892800, "basic": {"name_prefix": "DR.", "first_name":
+        "SUE", "last_name": "JAMES", "credential": "DDS", "sole_proprietor": "NO",
+        "gender": "F", "enumeration_date": "2005-05-24", "last_updated": "2007-07-08",
+        "status": "A", "name": "JAMES SUE"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "9351 GRANT ST", "address_2": "STE 340", "city": "DENVER",
+        "state": "CO", "postal_code": "802294365", "telephone_number": "303-254-4484",
+        "fax_number": "303-254-9658"}, {"country_code": "US", "country_name": "United
+        States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "9351 GRANT ST", "address_2": "STE 340", "city": "DENVER", "state": "CO",
+        "postal_code": "802294365", "telephone_number": "303-254-4484", "fax_number":
+        "303-254-9658"}], "taxonomies": [{"code": "1223G0001X", "desc": "Dentist General
+        Practice", "primary": true, "state": "CO", "license": "6425"}], "identifiers":
+        []},{"enumeration_type": "NPI-1", "number": 1700889474, "last_updated_epoch":
+        1183852800, "created_epoch": 1116892800, "basic": {"name_prefix": "DR.", "first_name":
+        "SHELDON", "last_name": "OMI", "middle_name": "R", "credential": "D.M.D. P.C",
+        "sole_proprietor": "NO", "gender": "M", "enumeration_date": "2005-05-24",
+        "last_updated": "2007-07-08", "status": "A", "name": "OMI SHELDON"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "7900 W
+        44TH AVE", "address_2": "STE 101", "city": "WHEAT RIDGE", "state": "CO", "postal_code":
+        "800334563", "telephone_number": "303-422-7978", "fax_number": "303-422-7979"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "7900 W 44TH AVE", "address_2":
+        "STE 101", "city": "WHEAT RIDGE", "state": "CO", "postal_code": "800334563",
+        "telephone_number": "303-422-7978", "fax_number": "303-422-7979"}], "taxonomies":
+        [{"code": "1223G0001X", "desc": "Dentist General Practice", "primary": true,
+        "state": "CO", "license": "6216"}], "identifiers": []},{"enumeration_type":
+        "NPI-1", "number": 1629071386, "last_updated_epoch": 1220832000, "created_epoch":
+        1116892800, "basic": {"name_prefix": "DR.", "first_name": "EDWARD", "last_name":
+        "ROSENFELD", "middle_name": "FRANK", "credential": "D.M.D., M.S.", "sole_proprietor":
+        "NO", "gender": "M", "enumeration_date": "2005-05-24", "last_updated": "2008-09-08",
+        "status": "A", "name": "ROSENFELD EDWARD"}, "other_names": [], "addresses":
+        [{"country_code": "US", "country_name": "United States", "address_purpose":
+        "LOCATION", "address_type": "DOM", "address_1": "6064 S BEELER ST", "address_2":
+        "", "city": "GREENWOOD VILLAGE", "state": "CO", "postal_code": "801115227",
+        "telephone_number": "303-771-4687"}, {"country_code": "US", "country_name":
+        "United States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "6064 S BEELER ST", "address_2": "", "city": "GREENWOOD VILLAGE", "state":
+        "CO", "postal_code": "801115227", "telephone_number": "303-771-4687"}], "taxonomies":
+        [{"code": "1223E0200X", "desc": "Dentist Endodontics", "primary": true, "state":
+        "CO", "license": "276"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1669475323, "last_updated_epoch": 1183852800, "created_epoch": 1116892800,
+        "basic": {"name_prefix": "DR.", "first_name": "FLOYD", "last_name": "SEKIYA",
+        "middle_name": "T", "credential": "D.D.S. P.C", "sole_proprietor": "NO", "gender":
+        "M", "enumeration_date": "2005-05-24", "last_updated": "2007-07-08", "status":
+        "A", "name": "SEKIYA FLOYD"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "7900 W 44TH AVE", "address_2": "STE 101", "city": "WHEAT
+        RIDGE", "state": "CO", "postal_code": "800334563", "telephone_number": "303-422-7978",
+        "fax_number": "303-422-7979"}, {"country_code": "US", "country_name": "United
+        States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "7900 W 44TH AVE", "address_2": "STE 101", "city": "WHEAT RIDGE", "state":
+        "CO", "postal_code": "800334563", "telephone_number": "303-422-7978", "fax_number":
+        "303-422-7979"}], "taxonomies": [{"code": "1223G0001X", "desc": "Dentist General
+        Practice", "primary": true, "state": "CO", "license": "429"}], "identifiers":
+        []},{"enumeration_type": "NPI-1", "number": 1790788602, "last_updated_epoch":
+        1474565230, "created_epoch": 1116892800, "basic": {"name_prefix": "DR.", "first_name":
+        "MICHAEL", "last_name": "BENTZ", "middle_name": "A", "credential": "DDS",
+        "sole_proprietor": "NO", "gender": "M", "enumeration_date": "2005-05-24",
+        "last_updated": "2016-09-22", "status": "A", "name": "BENTZ MICHAEL"}, "other_names":
+        [{"code": "2", "type": "Professional Name", "last_name": "BENTZ", "first_name":
+        "MICHAEL", "middle_name": "A", "credential": "DDS"}], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "1651 28TH ST", "address_2": "", "city": "BOULDER", "state":
+        "CO", "postal_code": "803011001", "telephone_number": "303-449-8783", "fax_number":
+        "303-449-8784"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1651 28TH ST", "address_2":
+        "", "city": "BOULDER", "state": "CO", "postal_code": "803011001", "telephone_number":
+        "303-449-8783", "fax_number": "303-449-8784"}], "taxonomies": [{"code": "1223G0001X",
+        "desc": "Dentist General Practice", "primary": true, "state": "CO", "license":
+        "104115"}], "identifiers": []},{"enumeration_type": "NPI-1", "number": 1912900986,
+        "last_updated_epoch": 1483455378, "created_epoch": 1116892800, "basic": {"name_prefix":
+        "DR.", "first_name": "THOMAS", "last_name": "CROGHAN", "middle_name": "JOSEPH",
+        "credential": "DDS", "sole_proprietor": "YES", "gender": "M", "enumeration_date":
+        "2005-05-24", "last_updated": "2017-01-03", "status": "A", "name": "CROGHAN
+        THOMAS"}, "other_names": [], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "4624 E 23RD AVE", "address_2": "", "city": "DENVER", "state": "CO", "postal_code":
+        "802073139", "telephone_number": "303-377-8662", "fax_number": "303-377-4785"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "4624 E 23RD AVE", "address_2":
+        "", "city": "DENVER", "state": "CO", "postal_code": "802073139", "telephone_number":
+        "303-377-8662", "fax_number": "303-377-4785"}], "taxonomies": [{"code": "1223G0001X",
+        "desc": "Dentist General Practice", "primary": true, "state": "CO", "license":
+        "7462"}], "identifiers": []},{"enumeration_type": "NPI-1", "number": 1477556314,
+        "last_updated_epoch": 1521244800, "created_epoch": 1116892800, "basic": {"name_prefix":
+        "DR.", "first_name": "ROBERT", "last_name": "BENKE", "middle_name": "JOHN",
+        "credential": "D.D.S.", "sole_proprietor": "NO", "gender": "M", "enumeration_date":
+        "2005-05-24", "last_updated": "2018-03-17", "status": "A", "name": "BENKE
+        ROBERT"}, "other_names": [], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "3705 W 12TH ST STE 3C", "address_2": "", "city": "GREELEY", "state": "CO",
+        "postal_code": "806342550", "telephone_number": "970-356-2120", "fax_number":
+        "970-356-1013"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "3705 W 12TH ST STE 3C", "address_2":
+        "", "city": "GREELEY", "state": "CO", "postal_code": "806342550", "telephone_number":
+        "970-356-2120", "fax_number": "970-356-1013"}], "taxonomies": [{"code": "1223G0001X",
+        "desc": "Dentist General Practice", "primary": true, "state": "CO", "license":
+        "105253"}], "identifiers": [{"identifier": "19753543", "code": "05", "desc":
+        "MEDICAID", "state": "CO", "issuer": ""}, {"identifier": "02052538", "code":
+        "05", "desc": "MEDICAID", "state": "CO", "issuer": ""}], "practiceLocations":
+        [{"address_type": "DOM", "address_1": "1640 25TH AVE", "address_2": "STE B",
+        "city": "GREELEY", "state": "CO", "postal_code": "806344957", "country_code":
+        "US", "country_name": "United States", "fax_number": "970-356-1013", "telephone_number":
+        "970-356-2120", "update_date": "2017-12-06 18:32"}]},{"enumeration_type":
+        "NPI-1", "number": 1821091356, "last_updated_epoch": 1183852800, "created_epoch":
+        1117411200, "basic": {"name_prefix": "DR.", "first_name": "DAVID", "last_name":
+        "HIBL", "middle_name": "JOSEPH", "credential": "D.D.S., M.S.", "sole_proprietor":
+        "NO", "gender": "M", "enumeration_date": "2005-05-30", "last_updated": "2007-07-08",
+        "status": "A", "name": "HIBL DAVID"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "1760 CENTENNIAL DR", "address_2": "", "city": "LOUISVILLE",
+        "state": "CO", "postal_code": "800271302", "telephone_number": "303-665-7333"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1760 CENTENNIAL DR", "address_2":
+        "", "city": "LOUISVILLE", "state": "CO", "postal_code": "800271302", "telephone_number":
+        "303-665-7333"}], "taxonomies": [{"code": "1223X0400X", "desc": "Dentist Orthodontics
+        and Dentofacial Orthopedics", "primary": true, "state": "CO", "license": "104322"}],
+        "identifiers": []},{"enumeration_type": "NPI-1", "number": 1679575740, "last_updated_epoch":
+        1183852800, "created_epoch": 1117670400, "basic": {"name_prefix": "DR.", "first_name":
+        "RUSSELL", "last_name": "CASEMENT", "middle_name": "LYNN", "credential": "DDS",
+        "sole_proprietor": "NO", "gender": "M", "enumeration_date": "2005-06-02",
+        "last_updated": "2007-07-08", "status": "A", "name": "CASEMENT RUSSELL"},
+        "other_names": [], "addresses": [{"country_code": "US", "country_name": "United
+        States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "1355 S COLORADO BLVD", "address_2": "BLDG C", "city": "DENVER", "state":
+        "CO", "postal_code": "802223305", "telephone_number": "303-758-0866", "fax_number":
+        "303-758-3657"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1355 S COLORADO BLVD", "address_2":
+        "BLDG C", "city": "DENVER", "state": "CO", "postal_code": "802223305", "telephone_number":
+        "303-758-0866", "fax_number": "303-758-3657"}], "taxonomies": [{"code": "1223G0001X",
+        "desc": "Dentist General Practice", "primary": true, "state": "CO", "license":
+        "3674"}], "identifiers": []},{"enumeration_type": "NPI-1", "number": 1790789071,
+        "last_updated_epoch": 1292371200, "created_epoch": 1117670400, "basic": {"name_prefix":
+        "DR.", "first_name": "BRUCE", "last_name": "HOWELL", "middle_name": "E", "credential":
+        "DDS", "sole_proprietor": "NO", "gender": "M", "enumeration_date": "2005-06-02",
+        "last_updated": "2010-12-15", "status": "A", "name": "HOWELL BRUCE"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "6160 FIRESTONE
+        BLVD", "address_2": "SUITE 105", "city": "FIRESTONE", "state": "CO", "postal_code":
+        "805046427", "telephone_number": "303-532-3371", "fax_number": "303-532-3375"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1260 S HOVER ST", "address_2":
+        "UNIT H", "city": "LONGMONT", "state": "CO", "postal_code": "805017911", "telephone_number":
+        "303-678-1125", "fax_number": "303-678-8986"}], "taxonomies": [{"code": "1223G0001X",
+        "desc": "Dentist General Practice", "primary": true, "state": "CO", "license":
+        "9068"}], "identifiers": []},{"enumeration_type": "NPI-1", "number": 1659375574,
+        "last_updated_epoch": 1183852800, "created_epoch": 1118275200, "basic": {"name_prefix":
+        "DR.", "first_name": "DEREK", "last_name": "STRAFFON", "middle_name": "ATWOOD",
+        "credential": "D.D.S, M.S.", "sole_proprietor": "NO", "gender": "M", "enumeration_date":
+        "2005-06-09", "last_updated": "2007-07-08", "status": "A", "name": "STRAFFON
+        DEREK"}, "other_names": [], "addresses": [{"country_code": "US", "country_name":
+        "United States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "6850 E HAMPDEN AVE", "address_2": "STE 203", "city": "DENVER", "state": "CO",
+        "postal_code": "802243024", "telephone_number": "303-758-3414"}, {"country_code":
+        "US", "country_name": "United States", "address_purpose": "MAILING", "address_type":
+        "DOM", "address_1": "6850 E HAMPDEN AVE", "address_2": "STE 203", "city":
+        "DENVER", "state": "CO", "postal_code": "802243024", "telephone_number": "303-758-3414"}],
+        "taxonomies": [{"code": "1223X0400X", "desc": "Dentist Orthodontics and Dentofacial
+        Orthopedics", "primary": true, "state": "CO", "license": "8341"}], "identifiers":
+        []},{"enumeration_type": "NPI-1", "number": 1407850084, "last_updated_epoch":
+        1426377600, "created_epoch": 1118361600, "basic": {"name_prefix": "DR.", "first_name":
+        "CHAD", "last_name": "BELONGEA", "middle_name": "MICHAEL", "credential": "D.D.S.",
+        "sole_proprietor": "NO", "gender": "M", "enumeration_date": "2005-06-10",
+        "last_updated": "2015-03-15", "status": "A", "name": "BELONGEA CHAD"}, "other_names":
+        [], "addresses": [{"country_code": "US", "country_name": "United States",
+        "address_purpose": "LOCATION", "address_type": "DOM", "address_1": "7735 W
+        LONG DR UNIT 9", "address_2": "", "city": "LITTLETON", "state": "CO", "postal_code":
+        "801231262", "telephone_number": "303-933-8880", "fax_number": "303-442-4396"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "10843 HEATHERTON ST", "address_2":
+        "", "city": "HIGHLANDS RANCH", "state": "CO", "postal_code": "801306622",
+        "telephone_number": "419-779-0985"}], "taxonomies": [{"code": "1223G0001X",
+        "desc": "Dentist General Practice", "primary": false, "state": "OH", "license":
+        "30021385"}, {"code": "122300000X", "desc": "Dentist", "primary": true, "state":
+        "CO", "license": "DEN.00201939"}], "identifiers": [{"identifier": "DEN.00201939",
+        "code": "01", "desc": "Other", "state": "CO", "issuer": "DENTAL LICENSE"},
+        {"identifier": "30021385", "code": "01", "desc": "Other", "state": "OH", "issuer":
+        "DENTAL LICENSE"}]},{"enumeration_type": "NPI-1", "number": 1285638833, "last_updated_epoch":
+        1265241600, "created_epoch": 1118361600, "basic": {"name_prefix": "DR.", "first_name":
+        "CRAIG", "last_name": "HOVICK", "middle_name": "J", "credential": "DDS", "sole_proprietor":
+        "YES", "gender": "M", "enumeration_date": "2005-06-10", "last_updated": "2010-02-04",
+        "status": "A", "name": "HOVICK CRAIG"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "1055 17TH AVE", "address_2": "STE 101", "city": "LONGMONT",
+        "state": "CO", "postal_code": "805012647", "telephone_number": "303-678-5253",
+        "fax_number": "303-678-1054"}, {"country_code": "US", "country_name": "United
+        States", "address_purpose": "MAILING", "address_type": "DOM", "address_1":
+        "1055 17TH AVE", "address_2": "STE 101", "city": "LONGMONT", "state": "CO",
+        "postal_code": "805012647", "telephone_number": "303-678-5253", "fax_number":
+        "303-678-1054"}], "taxonomies": [{"code": "1223P0300X", "desc": "Dentist Periodontics",
+        "primary": true, "state": "CO", "license": "105418"}], "identifiers": []},{"enumeration_type":
+        "NPI-1", "number": 1083618342, "last_updated_epoch": 1447424197, "created_epoch":
+        1117670400, "basic": {"name_prefix": "DR.", "first_name": "PAUL", "last_name":
+        "CARDON", "middle_name": "NOLAN", "credential": "D.D.S.", "sole_proprietor":
+        "NO", "gender": "M", "enumeration_date": "2005-06-02", "last_updated": "2015-11-13",
+        "status": "A", "name": "CARDON PAUL"}, "other_names": [], "addresses": [{"country_code":
+        "US", "country_name": "United States", "address_purpose": "LOCATION", "address_type":
+        "DOM", "address_1": "325 2ND ST", "address_2": "", "city": "MONUMENT", "state":
+        "CO", "postal_code": "801327935", "telephone_number": "719-481-4949", "fax_number":
+        "719-481-4989"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "757W STADIUM BLVD B", "address_2":
+        "", "city": "JEFFERSON CITY", "state": "MO", "postal_code": "651094786", "telephone_number":
+        "573-636-5522", "fax_number": "573-636-3328"}], "taxonomies": [{"code": "122300000X",
+        "desc": "Dentist", "primary": true, "state": "CO", "license": "6400"}], "identifiers":
+        []},{"enumeration_type": "NPI-1", "number": 1578565669, "last_updated_epoch":
+        1183852800, "created_epoch": 1117670400, "basic": {"name_prefix": "DR.", "first_name":
+        "MAURICE", "last_name": "SALAMANDER", "middle_name": "R", "credential": "D.D.S.,
+        MS, FACP", "sole_proprietor": "NO", "gender": "M", "enumeration_date": "2005-06-02",
+        "last_updated": "2007-07-08", "status": "A", "name": "SALAMANDER MAURICE"},
+        "other_names": [], "addresses": [{"country_code": "US", "country_name": "United
+        States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "USAF ACADEMY", "address_2": "", "city": "COLORADO SPRINGS", "state": "CO",
+        "postal_code": "80920", "telephone_number": "719-333-5129"}, {"country_code":
+        "US", "country_name": "United States", "address_purpose": "MAILING", "address_type":
+        "DOM", "address_1": "3875 WEATHER VANE DR", "address_2": "", "city": "COLORADO
+        SPRINGS", "state": "CO", "postal_code": "809204937"}], "taxonomies": [{"code":
+        "1223P0700X", "desc": "Dentist Prosthodontics", "primary": true, "state":
+        "CO", "license": "8129"}], "identifiers": []},{"enumeration_type": "NPI-1",
+        "number": 1093719916, "last_updated_epoch": 1450706456, "created_epoch": 1118275200,
+        "basic": {"name_prefix": "DR.", "first_name": "MARK", "last_name": "KESSLER",
+        "credential": "DDS", "sole_proprietor": "NO", "gender": "M", "enumeration_date":
+        "2005-06-09", "last_updated": "2015-12-21", "reactivation_date": "2006-05-04",
+        "status": "A", "deactivation_date": "2006-04-04", "name": "KESSLER MARK"},
+        "other_names": [], "addresses": [{"country_code": "US", "country_name": "United
+        States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "3525 W OXFORD AVE", "address_2": "UNIT G-3", "city": "DENVER", "state": "CO",
+        "postal_code": "802363106", "telephone_number": "303-797-4260"}, {"country_code":
+        "US", "country_name": "United States", "address_purpose": "MAILING", "address_type":
+        "DOM", "address_1": "3525 W OXFORD AVE", "address_2": "UNIT G-3", "city":
+        "DENVER", "state": "CO", "postal_code": "802363106", "telephone_number": "303-797-4260"}],
+        "taxonomies": [{"code": "122300000X", "desc": "Dentist", "primary": true,
+        "state": "CO", "license": "00667"}], "identifiers": []},{"enumeration_type":
+        "NPI-1", "number": 1295739720, "last_updated_epoch": 1183852800, "created_epoch":
+        1118620800, "basic": {"name_prefix": "DR.", "first_name": "DAVID", "last_name":
+        "CRICHTON", "middle_name": "DREWRY", "credential": "DDS", "sole_proprietor":
+        "NO", "gender": "M", "enumeration_date": "2005-06-13", "last_updated": "2007-07-08",
+        "status": "A", "name": "CRICHTON DAVID"}, "other_names": [], "addresses":
+        [{"country_code": "US", "country_name": "United States", "address_purpose":
+        "LOCATION", "address_type": "DOM", "address_1": "1625 MEDICAL CENTER PT",
+        "address_2": "STE 260", "city": "COLORADO SPRINGS", "state": "CO", "postal_code":
+        "809078721", "telephone_number": "719-473-2650", "fax_number": "719-473-2508"},
+        {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "1625 MEDICAL CENTER PT", "address_2":
+        "STE 260", "city": "COLORADO SPRINGS", "state": "CO", "postal_code": "809078721",
+        "telephone_number": "719-473-2650", "fax_number": "719-473-2508"}], "taxonomies":
+        [{"code": "1223S0112X", "desc": "Dentist Oral and Maxillofacial Surgery",
+        "primary": true, "state": "CO", "license": "105187"}], "identifiers": []},{"enumeration_type":
+        "NPI-1", "number": 1669477097, "last_updated_epoch": 1305763200, "created_epoch":
+        1118620800, "basic": {"name_prefix": "DR.", "first_name": "RICHARD", "last_name":
+        "MCLAIN", "middle_name": "LOUIS", "credential": "D.D.S.", "sole_proprietor":
+        "NO", "gender": "M", "enumeration_date": "2005-06-13", "last_updated": "2011-05-19",
+        "status": "A", "name": "MCLAIN RICHARD"}, "other_names": [], "addresses":
+        [{"country_code": "US", "country_name": "United States", "address_purpose":
+        "LOCATION", "address_type": "DOM", "address_1": "7889 S LINCOLN CT", "address_2":
+        "STE 201", "city": "LITTLETON", "state": "CO", "postal_code": "801222651",
+        "telephone_number": "303-798-4553", "fax_number": "303-798-2208"}, {"country_code":
+        "US", "country_name": "United States", "address_purpose": "MAILING", "address_type":
+        "DOM", "address_1": "1808 MOUNTAIN SAGE PL", "address_2": "", "city": "HIGHLANDS
+        RANCH", "state": "CO", "postal_code": "801262660", "telephone_number": "303-346-1129"}],
+        "taxonomies": [{"code": "1223S0112X", "desc": "Dentist Oral and Maxillofacial
+        Surgery", "primary": true, "state": "CO", "license": "7590"}], "identifiers":
+        [{"identifier": "82174831", "code": "05", "desc": "MEDICAID", "state": "CO",
+        "issuer": ""}]},{"enumeration_type": "NPI-1", "number": 1588669600, "last_updated_epoch":
+        1272326400, "created_epoch": 1118793600, "basic": {"name_prefix": "DR.", "first_name":
+        "JOHN", "last_name": "HILDEBRANDT", "middle_name": "ROBERT", "credential":
+        "DDS", "sole_proprietor": "YES", "gender": "M", "enumeration_date": "2005-06-15",
+        "last_updated": "2010-04-27", "status": "A", "name": "HILDEBRANDT JOHN"},
+        "other_names": [], "addresses": [{"country_code": "US", "country_name": "United
+        States", "address_purpose": "LOCATION", "address_type": "DOM", "address_1":
+        "5745 ERINDALE DR", "address_2": "STE 100", "city": "COLORADO SPRINGS", "state":
+        "CO", "postal_code": "809188926", "telephone_number": "719-473-2650", "fax_number":
+        "719-473-2508"}, {"country_code": "US", "country_name": "United States", "address_purpose":
+        "MAILING", "address_type": "DOM", "address_1": "5745 ERINDALE DR", "address_2":
+        "STE 100", "city": "COLORADO SPRINGS", "state": "CO", "postal_code": "809188926",
+        "telephone_number": "719-473-2650", "fax_number": "719-473-2508"}], "taxonomies":
+        [{"code": "1223S0112X", "desc": "Dentist Oral and Maxillofacial Surgery",
+        "primary": true, "state": "CO", "license": "104783"}], "identifiers": []}]}'
+  recorded_at: Tue, 07 Dec 2021 22:59:53 GMT
+recorded_with: VCR 6.0.0
