@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   def flash_message
     'At least one the the following fields
     below must be completed in addition to
-    State: First Name, Last Name, or specialty.'
+    State: First Name, Last Name, or Specialty.'
   end
 end

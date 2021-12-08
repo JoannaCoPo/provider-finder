@@ -11,7 +11,11 @@
   </head>
 
   <body>
-    <%= flash[:alert] %>
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-info">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
 
     <%= yield %>
   </body>
