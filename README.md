@@ -1,24 +1,53 @@
-# README
+# Tea Time
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![Image](https://media.giphy.com/media/WQMgnHWQdyZjO/giphy.gif)  
+[via GIPHY](https://media.giphy.com/media/WQMgnHWQdyZjO/giphy.gif)
 
-Things you may want to cover:
+### A provider lookup tool for providers who accept Medicare and Medicaid.
+##### Created Medicare & Medicaid's NPI (National Provider Identifier) [API](https://npiregistry.cms.hhs.gov/registry/help-api).
 
-* Ruby version
+#### Framework
+<p>
+  <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />
+</p>
 
-* System dependencies
+#### Languages
+<p>
+  <img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=flaste&logo=ruby&logoColor=white" />
+</p>
 
-* Configuration
+#### Testing
+<p>
+<img src="https://img.shields.io/badge/rspec-16B7FB.svg?&style=flaste&logo=rubygems&logoColor=white" />
+</p>
 
-* Database creation
+#### Tools
+<p>  
+  <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-FF6E4F.svg?&style=flat&logo=postman&logoColor=white" />
+</p>
 
-* Database initialization
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+#### <ins>Project Configurations</ins>
 
-* Deployment instructions
+* Ruby Version
+    ```bash
+    $ ruby -v
+    ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin20]
+    ```
 
-* ...
+* [System Dependencies](https://github.com/JoannaCoPo/provider-finder/blob/main/Gemfile)
+    ```bash
+    $ rails -v
+    Rails 6.1.4
+    ```
+    
+* How to run the test suite:
+    ```bash
+    $ bundle exec rspec -fd
+    ```
+
+
