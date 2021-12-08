@@ -12,7 +12,7 @@ App requirements include but are not limited to:
 * On fetched results, the UI should display the provider’s full name, NPI number, and a list
 of addresses for each result.
 * Include pagination (optional)
-* 
+ 
 #### Framework
 <p>
   <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />
