@@ -1,4 +1,6 @@
 <div class="container pt-5">
+  <p><%= button_to 'Back to provider search page', provider_search_path, method: :get %></p>
+  <br>
   <h2>Provider Search Results:</h2>
   <br>
   <% if params[:last_name] && params[:state] %>
