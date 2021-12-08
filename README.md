@@ -1,8 +1,18 @@
 # Provider Finder
-### A provider lookup tool for providers who accept Medicare and Medicaid.
+### A provider lookup tool for those seeking providers that accept Medicare and Medicaid.
 ##### Created using Medicare & Medicaid's NPI (National Provider Identifier) [API](https://npiregistry.cms.hhs.gov/registry/help-api).
 * Visit [this link](https://medicaid-provider-lookup.herokuapp.com/provider_search) for the deployed app in production
 
+App requirements include but are not limited to:
+* The backend API calls serving the UI need to accept searches by:
+  * Last Name + 2 character state abbrevation
+  * First Name + Last Name
+  * Exact provider specialty + 2 character state abbrevation
+* The interface should take the doctor's name and the state as inputs.
+* On fetched results, the UI should display the provider’s full name, NPI number, and a list
+of addresses for each result.
+* Include pagination (optional)
+* 
 #### Framework
 <p>
   <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />
