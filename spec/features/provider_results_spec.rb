@@ -22,9 +22,9 @@ RSpec.describe 'provider search results index page' do
 
       expect(page).to have_content('LARS STANGEBYE')
       expect(page).to have_content('NPI Number: 1093896730')
-      expect(page).to have_content('specialty: Family Medicine')
-      expect(page).to have_content('816 S 5TH ST SUITE B Montrose, CO 814015765')
-      expect(page).to have_content('970-240-4311')
+      expect(page).to have_content('Specialty: Family Medicine')
+      expect(page).to have_content('Address: 816 S 5TH ST SUITE B Montrose, CO 814015765')
+      expect(page).to have_content('Phone Number: 970-240-4311')
     end
 
     it 'displays additional info for user' do
