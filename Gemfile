@@ -33,6 +33,7 @@ gem 'jquery-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'will_paginate', '~> 3.3'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -54,7 +55,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
   gem 'launchy'
-  gem 'simplecov'
   gem 'vcr'
   gem "webmock"
 end
