@@ -16,10 +16,10 @@
   <% if params[:last_name] && params[:state] %>
     <% @providers.each do |provider| %>
       <dt><p><%= provider.full_name %></p></dt>
-      <p>NPI Number: <%= provider.npi_number %></p>
-      <p>specialty: <%= provider.specialty %></p>
-      <p><%= provider.addresses %></p>
-      <p><%= provider.phone %></p>
+      <p><strong class="text-primary">NPI Number: </strong><%= provider.npi_number %></p>
+      <p><strong class="text-primary">Specialty: </strong><%= provider.specialty %></p>
+      <p><strong class="text-primary">Address: </strong><%= provider.addresses %></p>
+      <p><strong class="text-primary">Phone Number: </strong><%= provider.phone %></p>
       <hr class="dashed">
     <% end %>
   <% end %>
